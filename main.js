@@ -94,6 +94,8 @@ function openPortfolioModal(category) {
 function closePortfolioModal() {
     modal.style.display = 'none';
     document.body.style.overflow = 'auto'; // Restaurar comportamiento de scroll
+    // Limpiar el contenido del modal para detener la reproducción de audio/video en segundo plano
+    modalGrid.innerHTML = '';
 }
 
 // Cerrar modal si el usuario hace clic en el espacio oscuro de fondo
