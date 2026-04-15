@@ -94,7 +94,9 @@ function openPortfolioModal(category) {
 function closePortfolioModal() {
     modal.style.display = 'none';
     document.body.style.overflow = 'auto'; // Restaurar comportamiento de scroll
-    // Limpiar el contenido del modal para detener la reproducción de audio/video en segundo plano
+    // Destruir por completo el reproductor para asegurar que el audio se corte (Anti-Bug de navegadores)
+    const iframes = modalGrid.querySelectorAll('iframe');
+    iframes.forEach(iframe => iframe.src = 'about:blank');
     modalGrid.innerHTML = '';
 }
 
