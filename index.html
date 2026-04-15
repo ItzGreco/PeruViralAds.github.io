@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perú Viral Ads | Producción de Videos Publicitarios</title>
+    <meta name="description" content="Perú Viral Ads - Agencia premium especialista en la creación de videos publicitarios, spots, comerciales y contenido para redes sociales en Perú.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <span class="text-gradient">Perú Viral</span> Ads
+        </div>
+        <nav class="nav-links">
+            <a href="#servicios">Servicios</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto" class="btn-primary">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-up">Videos que <span class="text-neon">Rompen</span> Internet</h1>
+            <p class="fade-up delay-1">Creamos producciones audiovisuales de alto impacto para marcas que buscan destacar. Desde spots comerciales hasta la estrategia viral completa.</p>
+            <div class="hero-buttons fade-up delay-2">
+                <a href="#portafolio" class="btn-primary btn-large">Ver Nuestro Trabajo</a>
+                <a href="https://wa.me/51976521982" target="_blank" class="btn-secondary btn-large">Cotizar por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section-padding" id="servicios">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card slide-up">
+                    <div class="service-icon">🎥</div>
+                    <h3>Spots Publicitarios</h3>
+                    <p>Producción cinematográfica de alta calidad. Ideal para comerciales de televisión, lanzamientos de marca y producciones premium para internet. Grabado con calidad 4K y estilo de cine.</p>
+                    <button class="btn-secondary w-100 mt-20" onclick="openPortfolioModal('spots')">EJEMPLOS</button>
+                </div>
+                <div class="service-card slide-up delay-1">
+                    <div class="service-icon">📱</div>
+                    <h3>Shorts & Reels</h3>
+                    <p>Dominamos el ritmo vertical. Contenido sumamente dinámico y optimizado para conquistar el algoritmo de TikTok, IG y Shorts. Retención y viralidad garantizada.</p>
+                    <button class="btn-secondary w-100 mt-20" onclick="openPortfolioModal('reels')">EJEMPLOS</button>
+                </div>
+                <div class="service-card slide-up delay-2">
+                    <div class="service-icon">🎬</div>
+                    <h3>Videos Corporativos</h3>
+                    <p>Transmite confianza y autoridad con videos institucionales elegantes que relatan el verdadero valor, casos de éxito, agronegocios o la misión de tu empresa.</p>
+                    <button class="btn-secondary w-100 mt-20" onclick="openPortfolioModal('corporativos')">EJEMPLOS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio section-padding" id="portafolio">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">Marcas que Confían en Nosotros</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in">
+                    <img src="moshaco.jpg" alt="Arroz El Moshaco" class="portfolio-img" onerror="this.src='https://images.unsplash.com/photo-1586201375761-83865001e8ac';">
+                    <div class="portfolio-overlay">
+                        <h3>Comercial Arroz "El Moshaco"</h3>
+                        <p>Spot Publicitario Nacional</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in delay-1">
+                    <img src="portfolio_2.png" alt="Campaña Telas Gamarra" class="portfolio-img" onerror="this.src='https://images.unsplash.com/photo-1620799140408-edc6dcb6d633';">
+                    <div class="portfolio-overlay">
+                        <h3>Telas Gamarra Premium</h3>
+                        <p>Reel de Moda y Tendencia (Vertical)</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in delay-2">
+                    <img src="norsal.jpg" alt="Sal Yodada Norsal" class="portfolio-img" onerror="this.src='https://images.unsplash.com/photo-1549557454-e65b263b610c';">
+                    <div class="portfolio-overlay">
+                        <h3>SAL YODADA NORSAL</h3>
+                        <p>Video Corporativo e Institucional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section class="contact section-padding" id="contacto">
+        <div class="container contact-container fade-in">
+            <div class="contact-info">
+                <h2>¿Listo para <span class="text-neon">Hacerte Viral?</span></h2>
+                <p>Déjanos un mensaje o contáctanos directamente a través de WhatsApp. El equipo de Perú Viral Ads está listo para producir tu próximo gran éxito.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="icon">📱</span> +51 976 521 982
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📍</span> Perú
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensaje simulado enviado. ¡Nos contactaremos pronto!');">
+                <input type="text" placeholder="Tu Nombre o Empresa" required>
+                <input type="email" placeholder="Tu Correo" required>
+                <textarea placeholder="Cuéntanos sobre tu proyecto publicitario" rows="4" required></textarea>
+                <button type="submit" class="btn-primary w-100">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Perú Viral Ads. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/51976521982" target="_blank" class="whatsapp-float popup-animation" aria-label="Chat WhatsApp">
+        <svg viewBox="0 0 32 32" class="wa-icon"><path d="M16 1.5C8 1.5 1.5 8 1.5 16c0 2.6.7 5.1 1.9 7.3L1.5 30.5l7.3-1.9c2.2 1.2 4.7 1.9 7.3 1.9 8 0 14.5-6.5 14.5-14.5S24 1.5 16 1.5zm0 26.5c-2.2 0-4.4-.6-6.3-1.6l-.4-.3-4.7 1.2 1.2-4.6-.3-.5c-1.1-1.9-1.7-4.1-1.7-6.3 0-6.6 5.4-12 12-12s12 5.4 12 12-5.4 12-12 12zm6.6-8.8c-.4-.2-2.1-1.1-2.5-1.2-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.6s.3-.4.4-.7c.1-.3 0-.5-.1-.7-.2-.4-.8-2.1-1.1-2.9-.3-.8-.7-.7-.8-.7h-.7c-.3 0-.7.1-1.1.5-.4.4-1.4 1.3-1.4 3.2s1.4 3.7 1.6 4c.2.3 2.7 4.1 6.6 5.8.9.4 1.6.6 2.2.8.9.3 1.8.2 2.4.1.7-.1 2.1-.9 2.5-1.7.4-.8.4-1.5.3-1.7-.2-.2-.5-.3-.9-.5z"/></svg>
+    </a>
+
+    <!-- Modal de Portafolio por Servicio -->
+    <div id="portfolioModal" class="portfolio-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closePortfolioModal()">&times;</span>
+            <h2 id="modalTitle" class="modal-title section-title">Portafolio</h2>
+            <p id="modalSubtitle" class="modal-subtitle">Proyectos terminados en esta categoría.</p>
+            <div class="modal-video-grid" id="modalVideoGrid">
+                <!-- Los videos se inyectarán aquí mediante JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
